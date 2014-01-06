@@ -10,6 +10,9 @@ Links:
 * Examples:
   * [Having Fun With Git Subtree | h2ik](http://h2ik.co/2011/03/having-fun-with-git-subtree/) has some nice examples
   * [Using Git subtrees for repository separation – Making Software](http://makingsoftware.wordpress.com/2013/02/16/using-git-subtrees-for-repository-separation/)
+* [Deploying a Git repository to a remote server | Wildly Inaccurate](http://wildlyinaccurate.com/deploying-a-git-repository-to-a-remote-server)
+* [A few git tips you didn't know about](http://mislav.uniqpath.com/2010/07/git-tips/)
+* [hub · the command-line wrapper for git](http://hub.github.com/)
 
 # General objectives
 * Patches to all components are tracked in the repository
@@ -20,6 +23,11 @@ Links:
 * Rebasing subtrees?
 * Checkout a tag and have detached head?
 * Slim subtree with only relevant commits to reduce repo weight? This will give for every use case a different solution.
+* Can we drush-download from git directly into a subtree? Maybe with a suitable git pull versiontag:foo-upstream?
+* Can we drush-download from git a single commit? 
+ * See `git fetch --depth 1`, `git checkout --orphan new-branch`, `git checkout tree-ish -- .`
+ * See [git - Why can't I push from a shallow clone? - Stack Overflow](http://stackoverflow.com/questions/6900103/why-cant-i-push-from-a-shallow-clone)
+ * 
 
 # Comparison to submodules
 * (+) Has more drive, better toolbase and less clutter
